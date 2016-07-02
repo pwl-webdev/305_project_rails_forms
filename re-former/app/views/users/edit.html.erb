@@ -1,0 +1,9 @@
+<%= form_for @user do |f| %>
+    <%= f.text_field :username, :value => @user.username %>
+    <br>
+    <%= f.text_field :email, :value => @user.email %>
+    <br>
+    <%= f.password_field :password, :value => "Password" %>
+    <br>
+    <%= f.submit "Edit" %>
+<% end %>
